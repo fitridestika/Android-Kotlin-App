@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- TextView untuk menampilkan counter -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <!-- Button untuk menambah angka -->
+    <Button
+        android:id="@+id/btnAddNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Number"
+        android:onClick="addNumber" />
+
+    <!-- Button untuk reset angka -->
+    <Button
+        android:id="@+id/btnResetNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Reset Number"
+        android:onClick="resetNumber" />
+
+    <!-- Button untuk mengurangi angka -->
+    <Button
+        android:id="@+id/btnSubtractNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Subtract Number"
+        android:onClick="subtractNumber" />
+
+</LinearLayout>
